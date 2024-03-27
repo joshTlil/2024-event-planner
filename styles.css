@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+}
+
+.container{
+    border: 1px black solid;
+    border-bottom: blue;
+    border-left: blue;
+    border-right: blue;
+    height: 100px;
+    width: 800px;
+    margin-left: 380px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: aqua;
+}
+
+textarea{
+    resize: none;
+    
+}
+
+.text{
+    width: 560px;
+}
+
+.button{
+    margin-left: 455px;
+    width: 125px;
+    text-align: center;
+}
+
+
+
