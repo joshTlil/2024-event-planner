@@ -1,5 +1,10 @@
 let timeDisplay = document.getElementById('time-display');
-// let hour =  document.getElementById('four');
+// let four =  document.getElementById('four');
+// let ten = document.getElementById('ten');
+let eleven = document.getElementById('11');
+let text9 = document.getElementById('text-nine');
+let text10 = document.getElementById('text-ten');
+let text11 = document.getElementById('text-eleven');
 
 
 function displayTime(){
@@ -7,13 +12,16 @@ function displayTime(){
     timeDisplay.textContent = rightNow;
 }
 
-// let thirdHour = moment().format('h');
+let hour = moment().format('h');
 // console.log(thirdHour);
 // console.log(hour.innerText);
 
-// if(hour.innerText === thirdHour){
-//     console.log(true);
-//     console.log("Hello")
-// }
+if(eleven > hour){
+    console.log(true);
+    console.log("Hello")
+    text11.classList.add("future");
+}
+
+
 
 setInterval(displayTime, 1000);
